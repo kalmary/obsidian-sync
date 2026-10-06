@@ -1,0 +1,16 @@
+[build-system]
+requires = ["uv_build>=0.11.0,<0.12.0"]
+build-backend = "uv_build"
+
+[project]
+name = "obsidian-sync-python"
+version = "0.1.0"
+description = "Safe bidirectional synchronization of local and iCloud Obsidian vaults"
+requires-python = ">=3.13"
+dependencies = []
+
+[project.scripts]
+obsidian-sync = "obsidian_sync.cli:main"
+
+[tool.uv.build-backend]
+module-name = "obsidian_sync"
